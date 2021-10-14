@@ -10,7 +10,7 @@ function drawImage(length) {
         if (j === 0 || j === length - 1) {
           result += '*';
         } else {
-          result += '0';
+          result += '#';
         }
       } else {
         if (j === 0 || j === length - 1) {
