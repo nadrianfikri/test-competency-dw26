@@ -6,13 +6,13 @@ function drawImage(length) {
   let result = '';
   for (let i = 0; i < length; i++) {
     for (let j = 0; j < length; j++) {
-      if (i === 0 || i === length - 1) {
+      if (i === 0 || i === length - 1 || i === Math.floor(length / 2)) {
         result += '*';
       } else {
-        if (j === 0 || j === length - 1) {
-          result += '*';
+        if (j === 0 || j === length - 1 || i == Math.floor(length / 2)) {
+          result += '#';
         } else {
-          result += ' ';
+          result += '*';
         }
       }
     }
