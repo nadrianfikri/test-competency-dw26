@@ -1,0 +1,23 @@
+{{> head}}
+{{> navbar}}
+    
+ <main style="height: 100vh; padding-top: 100px;">
+    <div class='d-flex lg '>
+        <div class='card justify-content-center align-items-center bg-white border border-secondary rounded m-4' style="width: 450px; height: 450px">
+            <img class='detail-img img-fluid' src='{{detailKab.photo}}' class='card-img-top' alt='product-photo' style="width: 250px;"/>
+        </div>
+        <div class='d-flex flex-column ms-5 mt-5'>
+            <h5 class='card-title fw-bold fs-2 mb-3'>{{detailKab.nama}}</h5>
+            <p class='card-text fw-bold'>Diresmikan pada: </p>
+            <p class='card-text'> {{detailKab.diresmikan}}</p>
+            <p class='card-text fw-bold'>Terletak di provinsi: </p>
+            <p class='card-text'> {{detailProv.nama}} dan Pulau {{detailProv.pulau}}</p>
+            <div class="cont-btn d-flex me-3 mt-5">
+                <a href="/kabupaten/edit/{{detailKab.id}}" class="btn btn-md btn-secondary py-2 px-3 me-3" style="width: 100px;">Edit</a>
+                <a href="/kabupaten/delete/{{detailKab.id}}" class="btn btn-md btn-danger py-2 px-3 me-3" style="width: 100px;">Hapus</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+{{> closetag}}
