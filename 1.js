@@ -51,4 +51,4 @@ function countPrice(quality, qty) {
   }
 }
 
-countPrice(C, 14);
+countPrice(B, 14);

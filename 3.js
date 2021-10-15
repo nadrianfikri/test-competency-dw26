@@ -24,4 +24,4 @@ function drawImage(length) {
   }
   return result;
 }
-console.log(drawImage(7));
+console.log(drawImage(5));

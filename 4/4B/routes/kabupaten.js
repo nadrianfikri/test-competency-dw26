@@ -128,6 +128,8 @@ router.get('/kabupaten/edit/:id', function (req, res) {
 
           return result;
         });
+        console.log(dataKab);
+        console.log(dataProv);
 
         res.render('manageData/edit-kab', {
           title: 'Edit kabupaten',

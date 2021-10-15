@@ -10,13 +10,17 @@ let array = [20, 12, 35, 11, 17, 9, 58, 23, 69, 21];
 
 function sortArr(arr) {
   for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length; j++) {
+    let j = 0;
+    while (j < arr.length) {
       if (arr[j] > arr[j + 1]) {
         let temp = arr[j];
         arr[j] = arr[j + 1];
         arr[j + 1] = temp;
       }
+      j++;
     }
+    // for (let j = 0; j < arr.length; j++) {
+    // }
   }
   return array;
 }
